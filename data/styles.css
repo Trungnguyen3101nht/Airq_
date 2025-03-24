@@ -1,0 +1,97 @@
+body {
+  font-family     : Arial, sans-serif;
+  background-color: #f0f0f0;
+  color           : #333;
+  text-align      : center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color    : white;
+}
+
+h2 {
+  font-size    : 1.2rem;
+  font-weight  : bold;
+  color        : #143642;
+  margin-bottom: 10px;
+}
+
+.topnav {
+  overflow        : hidden;
+  background-color: #143642;
+}
+
+.content {
+  padding  : 30px;
+  max-width: 1200px;
+  margin   : 0 auto;
+}
+
+.card {
+  background-color: #F8F7F9;
+  box-shadow      : 2px 2px 12px 1px rgba(140, 140, 140, .5);
+  padding-top     : 10px;
+  padding-bottom  : 20px;
+  margin          : 10px;
+  flex            : 1 1 calc(50% - 20px);
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 1 1 calc(25% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.dashboard-container {
+  max-width     : 1200px;
+  margin        : 0 auto;
+  display       : flex;
+  flex-direction: column;
+  gap           : 20px;
+}
+
+.row {
+  display        : flex;
+  justify-content: center;
+  gap            : 20px;
+  flex-wrap      : wrap;
+}
+
+.card-sensor {
+  background-color: #F8F7F9;
+  box-shadow      : 2px 2px 12px rgba(140, 140, 140, .5);
+  padding         : 10px;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  justify-content : space-between;
+}
+
+.card-sensor.rectangle {
+  flex  : 0 0 400px;
+  height: 200px;
+}
+
+.card-sensor.square {
+  flex  : 0 0 200px;
+  height: 200px;
+}
+
+.card-sensor div {
+  width          : 100%;
+  height         : 100%;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
